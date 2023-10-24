@@ -1,0 +1,22 @@
+<%- include ("../templates/encabezado") %>
+
+<body>
+    <div class="formulario">
+        <h1>Iniciar Sesión</h1>
+        <h2 id="mensaje"></h2>
+        <form action="/login" method="post">
+            <div class="username">
+                <input type="text" id="usuario" placeholder="Usuario" name="usuario" required>
+            </div>
+            <div class="username">
+                <input type="password" id="password" placeholder="Contraseña" name="password" required>
+            </div>
+            <input type="submit" value="Iniciar" name="iniciar">
+            <div class="registro">
+                <a href="/nuevoUsuario">Registrarme</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
